@@ -2,6 +2,8 @@
 
 E-commerce react application to get your hands on the best brands in the industry.
 
+[Casanova Brands](https://casanova-brands.netlify.app/)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
