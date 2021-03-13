@@ -41,11 +41,12 @@ const Wrapper = styled.section`
   margin-top: 3rem;
   display: flex;
   justify-content: center;
+  max-width: 92vw;
   article {
     border: 1px solid #999;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 2rem;
   }
   h4,
   h5,
@@ -78,6 +79,13 @@ const Wrapper = styled.section`
     font-size: 16px;
     padding: 0.7rem;
     text-transform: capitalize;
+  }
+
+  @media (max-width: 500px) {
+    margin-top: 0rem;
+    article {
+      padding: 1rem 0.5rem;
+    }
   }
 `;
 

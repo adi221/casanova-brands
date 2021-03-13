@@ -21,8 +21,8 @@ const ProductsPage = () => {
 const Wrapper = styled.section`
   .products {
     display: grid;
-    gap: 2rem 1.5rem;
-    margin: 1rem auto 2rem auto;
+    gap: 2rem 1rem;
+    margin: 0 auto;
 
     @media (min-width: 768px) {
       grid-template-columns: 200px 1fr;

@@ -25,10 +25,16 @@ button {
 }
 
 main {
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 2rem auto;
   /* text-align: center; */
   position: relative;
   min-height: calc(93vh - 12rem);
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 0 auto 2rem auto;
+  }
 }
 
 h1 {
@@ -48,6 +54,12 @@ h1 {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.9rem;
+  }
 }
 
 /* Pages */
@@ -113,8 +125,8 @@ a {
 
 .persons-container {
   padding: 2rem;
-  width: 90vw;
-  max-width: 1170px;
+  width: 1170px;
+  max-width: 90vw;
   margin: 0 auto;
   display: grid;
   justify-items: center;
@@ -162,12 +174,13 @@ a {
   position: fixed;
   z-index: 500;
   background-color: #fff;
-  width: 30%;
-  min-width: 330px;
+  width: 500px;
+  max-width: 80vw;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px black;
   padding: 32px;
-  left: 35%;
+  left: 50%;
+  transform: translateX(-50%);
   top: 10%;
   transition: all 0.3s ease-out;
   display: flex;
@@ -305,7 +318,7 @@ span {
   transition: all 0.3s linear;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .nav-center,
   .toggle-btn {
     display: block;
@@ -378,9 +391,20 @@ span {
   justify-content: center;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .sidebar {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar-social {
+    margin: 1rem 0;
+    text-align: left;
+  }
+
+  .icons {
+    justify-content: flex-start;
   }
 }
 
@@ -412,10 +436,26 @@ span {
   margin-bottom: 4rem;
 }
 
+@media (max-width: 600px) {
+  .hero-info {
+    left: 50%;
+    max-width: 90%;
+  }
+
+  .hero-info h1 {
+    font-size: 2rem;
+  }
+
+  .hero-info h2 {
+    font-size: 1.5rem;
+  }
+}
+
 /* Single Person */
 
 .single-person-container {
-  max-width: 700px;
+  max-width: 90vw;
+  width: 600px;
   margin: 5rem auto;
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -442,6 +482,12 @@ span {
 section {
   display: block;
   padding: 80px 0;
+}
+
+@media (max-height: 600px) {
+  section {
+    padding: 50px 0;
+  }
 }
 
 .section-center {
@@ -513,12 +559,12 @@ section {
 .faq-container {
   margin: 1rem 0;
   background-color: #fff;
-  padding: 2rem 2.5rem;
+  padding: 0;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  width: 80vw;
-  max-width: 1140px;
+  width: 700px;
+  max-width: 90vw;
   transition: all 1s ease;
 }
 
@@ -584,9 +630,9 @@ section {
 .reviews-container {
   margin: 0 auto;
   margin-top: 4rem;
-  width: 80vw;
+  width: 800px;
   height: 450px;
-  max-width: 800px;
+  max-width: 90vw;
   position: relative;
   display: flex;
 }
@@ -695,14 +741,14 @@ article.nextSlide {
   position: absolute;
   font-size: 2rem;
   top: -25px;
-  left: -20px;
+  left: -5px;
   transform: rotate(2deg);
 }
 
 .dots {
   position: absolute;
   left: 50%;
-  bottom: 20%;
+  bottom: 35%;
   transform: translateX(-50%);
 
   display: flex;
@@ -724,19 +770,57 @@ article.nextSlide {
   background-color: #3b3946 !important;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 900px) {
+  .next,
+  .prev {
+    display: none;
+  }
   .dots {
-    bottom: 10%;
+    bottom: 30%;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 650px) {
   .dots {
-    bottom: 0;
+    bottom: 25%;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 530px) {
   .dots {
-    bottom: -15%;
+    bottom: 30%;
+  }
+  .review-text {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 440px) {
+  .dots {
+    bottom: 22%;
+  }
+  .review-author {
+    column-gap: 0.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .dots {
+    bottom: 17%;
+  }
+}
+@media (max-width: 400px) {
+  .dots {
+    bottom: 13%;
+  }
+}
+@media (max-width: 350px) {
+  .dots {
+    bottom: 33%;
+  }
+  .review-author {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .dots {
+    bottom: 24%;
   }
 }
 
@@ -746,8 +830,18 @@ article.nextSlide {
   text-align: center;
   color: #fff;
   height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer p {
   font-size: 1.2rem;
+}
+
+@media (max-width: 530px) {
+  .footer p {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
 }

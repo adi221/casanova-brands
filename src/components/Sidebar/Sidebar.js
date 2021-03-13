@@ -5,13 +5,16 @@ import { Link } from 'react-router-dom';
 import { useStaffContext } from '../../context/staff_context';
 import { useUserContext } from '../../context/user_context';
 import CartLoginBtns from '../Cart/CartLoginBtns';
+import styled from 'styled-components';
 
 const Sidebar = () => {
   const { toggleSidebar, isShowSidebar } = useStaffContext();
   const { myUser } = useUserContext();
 
   return (
-    <aside className={`${isShowSidebar ? 'sidebar show-sidebar' : 'sidebar'}`}>
+    <Wrapper
+      className={`${isShowSidebar ? 'sidebar show-sidebar' : 'sidebar'}`}
+    >
       <div className='sidebar-header'>
         <Link to='/'>
           <h2>
@@ -50,8 +53,16 @@ const Sidebar = () => {
         </ul>
       </div>
       <CartLoginBtns />
-    </aside>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.aside`
+  @media (max-width: 600px) {
+    .cart-btn-wrapper {
+      margin: 0;
+    }
+  }
+`;
 
 export default Sidebar;

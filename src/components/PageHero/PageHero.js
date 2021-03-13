@@ -19,6 +19,7 @@ const PageHero = ({ title, product, staff }) => {
 const Wrapper = styled.section`
   background: linear-gradient(to right bottom, #2c6f91, #3883b8);
   padding: 50px 0;
+  margin: 0;
 
   .section-center {
     text-align: left;

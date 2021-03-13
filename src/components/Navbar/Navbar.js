@@ -48,7 +48,7 @@ const Navbar = () => {
 };
 
 const Wrapper = styled.nav`
-  @media (max-width: 1048px) {
+  @media (max-width: 1200px) {
     .cart-btn-wrapper {
       display: none;
     }

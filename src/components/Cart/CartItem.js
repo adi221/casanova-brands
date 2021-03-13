@@ -44,6 +44,7 @@ const Wrapper = styled.article`
   .price {
     display: none;
   }
+  max-width: 90vw;
   display: grid;
   grid-template-columns: 200px auto auto;
   grid-template-rows: 75px;
@@ -126,13 +127,25 @@ const Wrapper = styled.article`
     .amount-btns {
       width: 100px;
       button {
-        width: 1.5rem;
+        width: 1rem;
         height: 1rem;
         font-size: 1rem;
       }
       h2 {
         font-size: 1.5rem;
       }
+    }
+  }
+  @media (max-width: 450px) {
+    grid-template-columns: 200px auto;
+    padding: 0 0.5rem;
+
+    .remove-btn {
+      justify-self: flex-end;
+    }
+
+    .amount-btns {
+      display: none;
     }
   }
 `;

@@ -21,18 +21,18 @@ const SinglePerson = () => {
         <div className='single-person-container'>
           <img src={person.picture.large} alt={person.name.first} />
           <div className='person-info'>
-            <h2>
+            <h4>
               <span className='person-data'>Name: </span>
               {person.name.first} {person.name.last}
-            </h2>
-            <h2>
+            </h4>
+            <h4>
               <span className='person-data'>Email: </span>
               {person.email}
-            </h2>
-            <h2>
+            </h4>
+            <h4>
               <span className='person-data'>Phone: </span>
               {person.phone}
-            </h2>
+            </h4>
           </div>
         </div>
       </main>

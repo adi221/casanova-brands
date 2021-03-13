@@ -21,6 +21,8 @@ const Product = ({ id, name, image, price }) => {
 };
 
 const Wrapper = styled.article`
+  max-width: 90vw;
+
   .image-container {
     height: 400px;
     position: relative;

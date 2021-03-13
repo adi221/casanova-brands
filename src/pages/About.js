@@ -1,9 +1,10 @@
 import React from 'react';
 import PageHero from '../components/PageHero/PageHero';
+import styled from 'styled-components';
 
 const About = () => {
   return (
-    <div className='about-page'>
+    <Wrapper className='about-page'>
       <PageHero title='About' />
       <main style={{ marginTop: '2rem' }}>
         <h1>
@@ -16,7 +17,7 @@ const About = () => {
             margin: '1rem auto',
             fontSize: '1.3rem',
             padding: '2rem',
-            maxWidth: '1170px',
+            maxWidth: '90vw',
           }}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, nemo
@@ -31,8 +32,16 @@ const About = () => {
           autem illum quae perferendis eveniet neque magni odit! Hic, illo.
         </p>
       </main>
-    </div>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div`
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+`;
 
 export default About;

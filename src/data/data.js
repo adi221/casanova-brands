@@ -81,7 +81,7 @@ export const people = [
     location: 'San Fransisco, USA',
     header: 'Best Decision ever !',
     text:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quas quisquam non? Quas voluptate nulla minima deleniti optio ullam nesciunt, numquam corporis et asperiores laboriosam sunt, praesentium suscipit blanditiis. Necessitatibusid alias reiciendis, perferendis facere pariatur dolore veniam autem esse non voluptatem saepe provident nihil molestiae.',
+      'praesentium suscipit blanditiis. Necessitatibusid alias reiciendis praesentium suscipit blanditiis. N, perferendis facere pariatur dolore veniam autem esse non voluptatem saepe provident nihil molestiae.',
   },
   {
     id: 2,
@@ -91,7 +91,7 @@ export const people = [
     location: 'New York, USA',
     header: 'I Bought All The Collection !',
     text:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quas quisquam non? Quas voluptate nulla minima deleniti optio ullam nesciunt, numquam corporis et asperiores laboriosam sunt, praesentium suscipit blanditiis. Necessitatibusid alias reiciendis, perferendis facere pariatur dolore veniam autem esse non voluptatem saepe provident nihil molestiae.',
+      'praesentium suscipit blanditiis. Necessitatibusid alias reiciendis praesentium suscipit blanditiis. N, perferendis facere pariatur dolore veniam autem esse non voluptatem saepe provident nihil molestiae.',
   },
   {
     id: 3,
@@ -101,7 +101,7 @@ export const people = [
     location: 'Rome, Italy',
     header: 'I Cannot Look Back Again !',
     text:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quas quisquam non? Quas voluptate nulla minima deleniti optio ullam nesciunt, numquam corporis et asperiores laboriosam sunt, praesentium suscipit blanditiis. Necessitatibusid alias reiciendis, perferendis facere pariatur dolore veniam autem esse non voluptatem saepe provident nihil molestiae.',
+      'praesentium suscipit blanditiis. Necessitatibusid alias reiciend praesentium suscipit blanditiis. Nis, perferendis facere pariatur dolore veniam autem esse non voluptatem saepe provident nihil molestiae.',
   },
   {
     id: 4,
@@ -111,6 +111,6 @@ export const people = [
     location: 'London, Britain',
     header: 'Just Buy It !',
     text:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quas quisquam non? Quas voluptate nulla minima deleniti optio ullam nesciunt, numquam corporis et asperiores laboriosam sunt, praesentium suscipit blanditiis. Necessitatibusid alias reiciendis, perferendis facere pariatur dolore veniam autem esse non voluptatem saepe provident nihil molestiae.',
+      'praesentium suscipit blanditiis. Necessitatibusid alias reicie praesentium suscipit blanditiis. Nndis, perferendis facere pariatur dolore veniam autem esse non voluptatem saepe provident nihil molestiae.',
   },
 ];

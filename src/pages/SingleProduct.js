@@ -62,8 +62,8 @@ const SingleProduct = () => {
 const Wrapper = styled.div`
   display: grid;
   gap: 2.5rem;
-  width: 90vw;
-  max-width: 1170px;
+  width: 1170px;
+  max-width: 90vw;
   margin: 2rem auto;
   grid-template-columns: 1fr 1fr;
 
@@ -103,8 +103,21 @@ const Wrapper = styled.div`
     margin: 2rem;
   }
 
-  @media (min-width: 960px) {
-    .product-center {
+  @media (max-width: 800px) {
+    img {
+      max-width: 300px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  @media (max-width: 640px) {
+    display: block;
+    img {
+      max-width: 90vw;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-top: 1rem;
     }
   }
 `;
