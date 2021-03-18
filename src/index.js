@@ -9,9 +9,6 @@ import CartProvider from './context/cart_context';
 import { Auth0Provider } from '@auth0/auth0-react';
 import { UserProvider } from './context/user_context';
 
-// dev--c47e5pp.us.auth0.com
-// MfbGGwVNfeLWW55PdanvOMKH8eSrNrMH
-
 ReactDOM.render(
   <React.StrictMode>
     <Auth0Provider
